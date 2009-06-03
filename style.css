@@ -1,49 +1,40 @@
 /*
-Theme Name: WordPress Default
-Theme URI: http://wordpress.org/
-Description: The default WordPress theme based on the famous <a href="http://binarybonsai.com/kubrick/">Kubrick</a>.
+Theme Name: Village History
+Theme URI: http://github.com/sroegner/miltonsburgtheme
+Description: The WordPress theme for the Miltonsburg History website
 Version: 1.6
-Author: Michael Heilemann
-Author URI: http://binarybonsai.com/
-Tags: blue, custom header, fixed width, two columns, widgets
-
-	Kubrick v1.5
-	 http://binarybonsai.com/kubrick/
-
-	This theme was designed and built by Michael Heilemann,
-	whose blog you will find at http://binarybonsai.com/
-
-	The CSS, XHTML and design is released under GPL:
-	http://www.opensource.org/licenses/gpl-license.php
+Author: Steffen Roegner
+Author URI: mailto://steffen@sroegner.org
+Tags: white, simple
 
 */
-
 
 
 /* Begin Typography & Colors */
 body {
 	font-size: 62.5%; /* Resets 1em to 10px */
 	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
-	background: #d5d6d7 url('images/kubrickbgcolor.jpg');
+/*	background: #d5d6d7 url('images/kubrickbgcolor.jpg');*/
+	background: #d5d6d7;
 	color: #333;
 	text-align: center;
 	}
 
 #page {
 	background-color: white;
-	border: 1px solid #959596;
+/*	border: 1px solid #959596;*/
+	border: 1px solid #333;
 	text-align: left;
 	}
 
-#header {
-	background: #73a0c5 url('images/kubrickheader.jpg') no-repeat bottom center;
+/*#header {
+	background: #e6e6e6 url('images/logo_770x106.png') no-repeat -2px -10px;
 	}
 
 #headerimg 	{
 	margin: 7px 9px 0;
-	height: 192px;
-	width: 740px;
-	}
+}
+*/
 
 #content {
 	font-size: 1.2em
@@ -81,8 +72,8 @@ border: 1px solid #ddd;
 }
 
 #footer {
-	background: #eee url('images/kubrickfooter.jpg') no-repeat top;
-	border: none;
+/*	background: #eee url('images/kubrickfooter.jpg') no-repeat top;*/
+	border-top: 2px solid #333
 	}
 
 small {
@@ -101,9 +92,9 @@ h1 {
 	text-align: center;
 	}
 
-#headerimg .description {
-	font-size: 1.2em;
-	text-align: center;
+#header .description {
+  font-size: 1.2em;
+  text-align: center;
 	}
 
 h2 {
@@ -233,25 +224,28 @@ body {
 	padding: 0;
 	}
 
+#header {
+/*	background-color: #eec;*/
+	margin: 0 0 0 1px;
+	padding: 0;
+	height: 130px;
+	width: 988px;
+  text-align:center;
+  border-bottom: 2px solid #333;
+	}
+
 #page {
 	background-color: white;
 	margin: 20px auto;
 	padding: 0;
-	width: 760px;
+	width: 990px;
 	border: 1px solid #959596;
 	}
 
-#header {
-	background-color: #73a0c5;
-	margin: 0 0 0 1px;
-	padding: 0;
-	height: 200px;
-	width: 758px;
-	}
 
 #headerimg {
 	margin: 0;
-	height: 200px;
+	height: 110px;
 	width: 100%;
 	}
 
@@ -259,13 +253,13 @@ body {
 	float: left;
 	padding: 0 0 20px 45px;
 	margin: 0px 0 0;
-	width: 450px;
+	width: 700px;
 	}
 
 .widecolumn {
 	padding: 10px 0 20px 0;
 	margin: 5px 0 0 150px;
-	width: 450px;
+	width: 650px;
 	}
 
 .post {
@@ -571,7 +565,7 @@ select {
 #sidebar
 {
 	padding: 20px 0 10px 0;
-	margin-left: 545px;
+	margin-left: 795px;
 	width: 190px;
 	}
 
@@ -696,6 +690,11 @@ div.aligncenter {
 	line-height: 17px;
 	padding: 0 4px 5px;
 	margin: 0;
+}
+
+strong.search-excerpt {
+    font-style: italic;
+    color: #336;
 }
 /* End captions */
 
